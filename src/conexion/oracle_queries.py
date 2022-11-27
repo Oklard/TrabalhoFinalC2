@@ -52,9 +52,9 @@ class OracleQueries:
         '''
 
         self.conn = cx_Oracle.connect(user=self.user,
-                                      password=self.passwd,
-                                      dsn=self.connectionString()
-                                     )
+                        password=self.passwd,
+                        dsn=self.connectionString(in_container=True)
+                        )
         self.cur = self.conn.cursor()
         return self.cur
 
