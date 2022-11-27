@@ -21,24 +21,5 @@ CREATE TABLE Veiculo (
                 fabricante VARCHAR2(25) NOT NULL,
                 CONSTRAINT VEICULO_PK PRIMARY KEY (idCarro)
 );
-
-
-CREATE TABLE VendaVeiculo (
-                idVenda NUMBER NOT NULL,
-                valorVenda NUMBER NOT NULL,
-                dataVenda DATE NOT NULL,
-                idCliente NUMBER NOT NULL,
-                idCarro NUMBER,
-                CONSTRAINT VENDAVEICULO_PK PRIMARY KEY (idVenda)
-);
-
-
-ALTER TABLE VendaVeiculo ADD CONSTRAINT CLIENTE_VENDAVEICULO_FK
-FOREIGN KEY (idCliente)
-REFERENCES Cliente (idCliente)
-NOT DEFERRABLE;
-
-ALTER TABLE VendaVeiculo ADD CONSTRAINT VEICULO_VENDAVEICULO_FK
-FOREIGN KEY (idCarro)
-REFERENCES Veiculo (idCarro)
-NOT DEFERRABLE;
+insert into Veiculo(modelo,cor,ano,chassis,tipoCambio,fabricante) 
+Values ("Corsa","vermelho","getdate()","2195192851298gadsga",1,"aodgjaogjadogj")

@@ -4,5 +4,5 @@ select c.idcliente
      , c.email
      , c.telefone
      , c.endereco
-  from cliente c
+  from labdatabase.Cliente c
  order by c.nome

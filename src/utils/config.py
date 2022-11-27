@@ -7,16 +7,14 @@ MENU_PRINCIPAL = """Menu Principal
 """
 
 MENU_RELATORIOS = """Relatórios
-1 - Relatório de Vendas
-2 - Relatório de Veiculos
-3 - Relatório de Clientes
+1 - Relatório de Veiculos
+2 - Relatório de Clientes
 0 - Sair
 """
 
 MENU_ENTIDADES = """Entidades
 1 - VEICULOS
 2 - CLIENTES
-3 - VENDAS
 """
 
 # Consulta de contagem de registros por tabela
